@@ -1,0 +1,22 @@
+$grisOscuroTitulos: #424242;
+$grisClaroFecha: #5f6368;
+$grisTexto : #414549;
+$azul : #4285f4;
+
+
+[class*="col-"]{
+    min-height: 7px;
+    padding: 12px;
+    float: left;
+}
+
+@function anchoColumnas($columns){
+    @return percentage(($columns/12));
+}
+
+@for  $numColumna from 1 through 12{
+    .col-#{$numColumna}{
+        width: anchoColumnas($numColumna);
+    }
+}
+
