@@ -1,22 +1,96 @@
 $grisOscuroTitulos: #424242;
 $grisClaroFecha: #5f6368;
-$grisTexto : #414549;
-$azul : #4285f4;
+$grisTexto: #414549;
+$azul: #4285f4;
+$roboto: 'Roboto';
+$li : 'li';
+* {
+    font-family: $roboto;
+    margin: 0;
+    padding: 0;
+}
 
+header{
+   
+    padding: 4rem 0 0;
+}
 
-[class*="col-"]{
+.title {
+    background-image: url(../../assets/img/logo-tall.svg);
+    background-repeat: no-repeat;
+    padding: 4rem 0 0;
+    text-align: center;
+}
+.separador{
+    height: 8px;
+    width: 100%;
+    background-color: $azul;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.center {
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+.justify{
+    text-align: justify;
+}
+
+p{
+    padding: 4%;
+}
+
+.image{
+    width: 100%;
+}
+.footer-article{
+    background-color: lighten($azul,20%);
+    padding: 2%;
+}
+
+[class*="col-"] {
     min-height: 7px;
-    padding: 12px;
     float: left;
 }
 
-@function anchoColumnas($columns){
+.row {
+  &:before{
+    content: " ";
+    display: table;
+  }
+  &:after{
+    @extend .row:before;
+    clear: both;
+  }
+}
+
+nav {
+    li {
+        display: inline-block;
+        list-style: none;
+        padding: 2%;
+        &:hover {
+            text-decoration-line: underline;
+        }
+        a {
+            text-decoration-line: none;
+            color: $grisOscuroTitulos;
+        }
+    }
+}
+
+
+@function anchoColumnas($columns) {
     @return percentage(($columns/12));
 }
 
-@for  $numColumna from 1 through 12{
-    .col-#{$numColumna}{
+@for $numColumna from 1 through 12 {
+    .col-#{$numColumna} {
         width: anchoColumnas($numColumna);
     }
 }
+
 
