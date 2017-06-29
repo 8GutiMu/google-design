@@ -1,7 +1,20 @@
+.bloque {
+  margin: 0 auto; }
+  .bloque__boton {
+    border: 1px solid black; }
+    .bloque__boton--rojo {
+      background: red; }
+
 * {
   font-family: "Roboto";
   margin: 0;
   padding: 0; }
+
+.closer {
+  font-family: "Inconsolata"; }
+
+.marginTop {
+  margin-top: 2%; }
 
 header {
   padding: 4rem 0 0; }
@@ -31,9 +44,6 @@ header {
 .rigth {
   text-align: right; }
 
-p {
-  padding: 4%; }
-
 .image {
   width: 100%; }
 
@@ -60,6 +70,9 @@ nav li {
   nav li a {
     text-decoration-line: none;
     color: #424242; }
+
+article {
+  padding: 1% 1% 1% 1%; }
 
 .col-1 {
   width: 8.33333%; }
