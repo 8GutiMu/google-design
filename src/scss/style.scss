@@ -96,7 +96,9 @@ nav {
 }
 
 article{
-    @include padding(1%)
+    &:hover{
+        @include shadow($boxShadow);
+    }
 }
 
 @function anchoColumnas($columns) {

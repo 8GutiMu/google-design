@@ -1,3 +1,9 @@
 @mixin padding($pad){
     padding: $pad $pad $pad $pad;
 }
+
+@mixin shadow ($px){
+    box-shadow: $px;
+    
+}
+
