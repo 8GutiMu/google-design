@@ -2,19 +2,15 @@
 @import 'mixin';
 
 
-.bloque{
-    margin:0 auto;
-    &__boton{
-        border: 1px solid black;
-        &--rojo{
-             background:red;
-        }
-    }
-}
+
 * {
     font-family: $roboto;
     margin: 0;
     padding: 0;
+}
+
+.article-font-size{
+   font-size: 10px; 
 }
 
 .closer{
@@ -36,7 +32,7 @@ header {
 }
 
 .separador {
-    height: 8px;
+    height: 4px;
     width: 100%;
     background-color: $azul;
     margin-top: 15px;

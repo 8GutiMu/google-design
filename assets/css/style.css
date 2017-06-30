@@ -1,14 +1,10 @@
-.bloque {
-  margin: 0 auto; }
-  .bloque__boton {
-    border: 1px solid black; }
-    .bloque__boton--rojo {
-      background: red; }
-
 * {
   font-family: "Roboto";
   margin: 0;
   padding: 0; }
+
+.article-font-size {
+  font-size: 10px; }
 
 .closer {
   font-family: "Inconsolata"; }
@@ -26,7 +22,7 @@ header {
   text-align: center; }
 
 .separador {
-  height: 8px;
+  height: 4px;
   width: 100%;
   background-color: #4285f4;
   margin-top: 15px;
